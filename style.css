@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+#gallery {
+    margin: 2rem 0;
+    text-align: center;
+}
+#gallery img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s;
+}
+.tabs {
+    margin: 2rem 0 1rem 0;
+}
+.tab-btn.active {
+    background: #28a745;
+}
+.tab-content {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    margin-bottom: 1rem;
+    animation: fadeIn 0.5s;
+    width: 100%;
+    max-width: 400px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+#signup-form {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    max-width: 350px;
+    width: 100%;
+}
+#email-feedback, #password-feedback {
+    font-size: 0.9rem;
+    color: #dc3545;
+    min-height: 1.2em;
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+h1 {
+    text-align: center;
+}
+#gallery,
+.tabs,
+.tab-content,
+#signup-form {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

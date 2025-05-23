@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Event Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JavaScript Event Playground</h1>
+    <button id="main-btn">Click Me!</button>
+    <button id="color-btn">Change My Color</button>
+    <div id="gallery">
+        <img id="gallery-img" src="https://images.pexels.com/photos/32153042/pexels-photo-32153042/free-photo-of-happy-border-collie-in-poprad-landscape.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Gallery Image" />
+        <div>
+            <button id="prev-img">Previous</button>
+            <button id="next-img">Next</button>
+        </div>
+    </div>
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="1">Tab 1</button>
+        <button class="tab-btn" data-tab="2">Tab 2</button>
+        <button class="tab-btn" data-tab="3">Tab 3</button>
+    </div>
+    <div class="tab-content" id="tab-1">Welcome to Tab 1!</div>
+    <div class="tab-content" id="tab-2" style="display:none;">This is Tab 2.</div>
+    <div class="tab-content" id="tab-3" style="display:none;">Here is Tab 3.</div>
+    <form id="signup-form">
+        <h2>Sign Up</h2>
+        <label>Email: <input type="email" id="email" required></label><br>
+        <span id="email-feedback"></span><br>
+        <label>Password: <input type="password" id="password" required></label><br>
+        <span id="password-feedback"></span><br>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
